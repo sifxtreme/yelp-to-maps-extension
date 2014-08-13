@@ -6,5 +6,13 @@ var address = actualAddress[0].innerHTML.replace(/<(?:.|\n)*?>/gm, ' ').replace(
 
 var addressURL = encodeURIComponent(address);
 
-mapLink[0].href = "https://www.google.com/maps/search/"+addressURL;
-textLink[0].href = "https://www.google.com/maps/search/"+addressURL;
+var addressHrefValue = "https://www.google.com/maps/search/"+addressURL;
+
+mapLink[0].href = addressHrefValue;
+mapLink[0].addEventListener('click', function(){
+	window.location.replace(addressHrefValue);
+});
+textLink[0].href = addressHrefValue;
+textLink[0].addEventListener('click', function(){
+	window.location.replace(addressHrefValue);
+});
