@@ -6,7 +6,8 @@ var address = actualAddress[0].innerHTML.replace(/<(?:.|\n)*?>/gm, ' ').replace(
 
 var addressURL = encodeURIComponent(address);
 
-var addressHrefValue = "https://www.google.com/maps/search/"+addressURL;
+var addressHrefValue = "https://maps.google.com?daddr="+addressURL;
+
 
 mapLink[0].href = addressHrefValue;
 mapLink[0].addEventListener('click', function(){
