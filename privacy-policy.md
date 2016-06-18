@@ -1,3 +1,3 @@
 # Privacy Policy
 
-- We do not collect user informationd
+- We do not collect user information
